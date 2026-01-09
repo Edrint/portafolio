@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesús Malavé | Portafolio Profesional</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #00b4d8;
+            --dark-color: #1a1a1a;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f4f7f6;
+        }
+
+        .navbar {
+            background-color: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--dark-color) 0%, var(--primary-color) 100%);
+            color: white;
+            padding: 150px 0 100px;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        }
+
+        .section-title {
+            position: relative;
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: var(--secondary-color);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .skill-badge {
+            background: #e1e8ed;
+            color: var(--primary-color);
+            padding: 8px 15px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin: 5px;
+            font-weight: 500;
+        }
+
+        .project-box {
+            background: white;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">JM<span class="text-info">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero-section text-center animate__animated animate__fadeIn">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">Jesús Malavé</h1>
+            <h3 class="text-info mb-4">Informática para la Gestión Social</h3>
+            <p class="lead mx-auto" style="max-width: 800px;">
+                Desarrollador Full Stack Jr. enfocado en crear soluciones tecnológicas con impacto social. Especialista en PHP, Python y gestión de datos.
+            </p>
+            <div class="mt-5">
+                <a href="#proyectos" class="btn btn-info btn-lg px-4 me-md-2 fw-bold text-white">Ver Proyectos</a>
+                <a href="#habilidades" class="btn btn-outline-light btn-lg px-4">Mis Habilidades</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="section-title">Sobre Mí</h2>
+                <p class="text-secondary" style="text-align: justify;">
+                    Profesional en formación con una sólida base en desarrollo web y soporte técnico. Me destaco por mi capacidad para elaborar soluciones efectivas y adaptarme a entornos tecnológicos dinámicos. Mi enfoque es disciplinado, siempre orientado a la planificación y ejecución clara de proyectos que resuelvan necesidades reales de la comunidad.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-4 bg-white rounded shadow-sm">
+                    <h5><i class="fas fa-quote-left text-info me-2"></i> Mi Meta</h5>
+                    <p class="fst-italic text-muted">
+                        "Transformar datos en herramientas de gestión social mediante el desarrollo de software eficiente y seguro."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="row g-4 mt-2">
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 shadow-sm">
+                        <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                        <h4>Frontend</h4>
+                        <div class="mt-2">
+                            <span class="skill-badge">Bootstrap 5</span>
+                            <span class="skill-badge">SweetAlert2</span>
+                            <span class="skill-badge">Chart.js</span>
+                            <span class="skill-badge">Select2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 shadow-sm">
+                        <i class="fas fa-server fa-3x text-primary mb-3"></i>
+                        <h4>Backend & DB</h4>
+                        <div class="mt-2">
+                            <span class="skill-badge">PHP</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">MySQL</span>
+                            <span class="skill-badge">Lógica SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 shadow-sm">
+                        <i class="fas fa-tools fa-3x text-primary mb-3"></i>
+                        <h4>Soporte & Diseño</h4>
+                        <div class="mt-2">
+                            <span class="skill-badge">Mantenimiento TI</span>
+                            <span class="skill-badge">Hardware</span>
+                            <span class="skill-badge">Edición Gráfica</span>
+                            <span class="skill-badge">Multimedia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="container py-5">
+        <h2 class="section-title text-center">Proyectos Relevantes</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="project-box p-5 shadow-sm rounded">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h3 class="text-primary">Elaboración de Listín</h3>
+                            <p class="text-muted mb-4">
+                                Desarrollo de una herramienta automatizada para la creación de listados dinámicos.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle text-info me-2"></i> Integración Backend con <strong>PHP</strong>.</li>
+                                <li><i class="fas fa-check-circle text-info me-2"></i> Base de datos relacional en <strong>MySQL</strong>.</li>
+                                <li><i class="fas fa-check-circle text-info me-2"></i> Consultas eficientes para la gestión de datos sociales.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <i class="fas fa-database fa-5x text-light"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="section-title text-center text-white">Habilidades Blandas</h2>
+            <div class="row text-center g-4 mt-3">
+                <div class="col-md-3">
+                    <i class="fas fa-users fa-2x text-info mb-2"></i>
+                    <h6>Trabajo en Equipo</h6>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-comments fa-2x text-info mb-2"></i>
+                    <h6>Comunicación Efectiva</h6>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-brain fa-2x text-info mb-2"></i>
+                    <h6>Resolución de Problemas</h6>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-sync fa-2x text-info mb-2"></i>
+                    <h6>Adaptabilidad</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="educacion" class="container py-5">
+        <h2 class="section-title text-center">Educación</h2>
+        <div class="card p-4 mx-auto shadow-sm" style="max-width: 600px;">
+            <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                    <i class="fas fa-university fa-3x text-primary"></i>
+                </div>
+                <div class="flex-grow-1 ms-4">
+                    <h5 class="mb-0">Lic. en Informática para la Gestión Social</h5>
+                    <p class="text-primary mb-0">Universidad Bolivariana de Venezuela</p>
+                    <small class="text-muted">Ciudad Bolívar, Venezuela | En curso</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="mb-2">Jesús Malavé &copy; 2026 | Desarrollado con ❤️ y Bootstrap</p>
+            <div class="social-links">
+                <a href="https://github.com/Edrint" target="_blank"  class="text-white me-3"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jesus-malave-642ab7389/" target="_blank" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white"><i class="fas fa-envelope"></i> alfonzoherrera999@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
